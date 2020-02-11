@@ -22,12 +22,12 @@ CLASSIFIERS = [
 ]
 
 setup(
-    name='aldryn-redirects',
+    name='js-redirects',
     version=__version__,
     description='A modified version of django.contrib.redirects with multilingual target URLs.',
     author='Divio AG',
     author_email='info@divio.ch',
-    url='https://github.com/aldryn/aldryn-redirects',
+    url='https://github.com/compoundpartners/js-redirects',
     packages=find_packages(),
     license='LICENSE.txt',
     platforms=['OS Independent'],

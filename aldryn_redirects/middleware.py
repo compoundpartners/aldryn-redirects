@@ -8,7 +8,15 @@ from django.db.models import Q
 from .models import Redirect, StaticRedirect
 
 
-class RedirectFallbackMiddleware(object):
+class RedirectFallbackMiddleware:
+
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        response = self.get_response(request)
+        return response
+
     def process_request(self, request):
         static_redirect = StaticRedirect.objects.get_for_request(request)
         if static_redirect:

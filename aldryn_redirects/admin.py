@@ -4,7 +4,11 @@ from tablib import Dataset
 
 from django.conf import settings
 from django.contrib import admin, messages
-from django.core.urlresolvers import reverse
+try:
+    from django.core.urlresolvers import reverse
+except ImportError:
+    # Django 2.0
+    from django.urls import reverse
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.utils import timezone
@@ -40,7 +44,7 @@ class DeletionMixin(object):
     delete_selected.short_description = _('Delete selected objects')
 
 
-class RedirectAdmin(DeletionMixin, AllTranslationsMixin, TranslatableAdmin):
+class RedirectAdmin(AllTranslationsMixin, TranslatableAdmin):
     list_display = ('old_path',)
     list_filter = ('site',)
     search_fields = ('old_path', 'translations__new_path')
@@ -132,7 +136,7 @@ class StaticRedirectInboundRouteQueryParamInline(admin.TabularInline):
     extra = 1
 
 
-class StaticRedirectAdmin(DeletionMixin, admin.ModelAdmin):
+class StaticRedirectAdmin(admin.ModelAdmin):
     inlines = [StaticRedirectInboundRouteQueryParamInline]
     filter_horizontal = ('sites',)
     list_filter = ('sites',)
