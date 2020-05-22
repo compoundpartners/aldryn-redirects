@@ -14,7 +14,7 @@ class RedirectFallbackMiddleware(MiddlewareMixin):
     def process_request(self, request):
         static_redirect = StaticRedirect.objects.get_for_request(request)
         if static_redirect:
-            full_domain = ''#'{}://{}'.format(request.scheme, Site.objects.get(id=settings.SITE_ID).domain)
+            full_domain = '{}://{}'.format(request.scheme, Site.objects.get(id=settings.SITE_ID).domain)
             return http.HttpResponsePermanentRedirect(static_redirect.get_outbound_url(full_domain))
 
         path = request.path_info
