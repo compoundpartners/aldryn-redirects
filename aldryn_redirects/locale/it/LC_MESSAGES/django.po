@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 12:44+0100\n"
+"POT-Creation-Date: 2012-03-23 02:43+0100\n"
 "PO-Revision-Date: 2012-02-14 13:40+0000\n"
 "Last-Translator: Jannis Leidel <jannis@leidel.info>\n"
 "Language-Team: Italian (http://www.transifex.net/projects/p/django/language/"
@@ -17,72 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:32
-#, python-brace-format
-msgid "Too many items for deletion. Only first {qty} items were deleted."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:42
-#, python-brace-format
-msgid "Successfully deleted {qty} {object_label}."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:44
-msgid "Delete selected objects"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:114
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:207
-msgid "Redirects imported successfully."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:125
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:126
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:218
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:219
-#, fuzzy
-#| msgid "redirects"
-msgid "Import redirects"
-msgstr "redirezioni"
-
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:134
-msgid "Query Param"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/admin.py:135
-msgid "Query Params"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/forms.py:15
-msgid "csv file"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/importers.py:73
-msgid ""
-"malformed row. Row must contain site (required), old_path (required), "
-"new_path (optional) and language_code (required)."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/importers.py:80
-#: addons-dev/js-redirects/aldryn_redirects/importers.py:137
-msgid "domain not found."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/importers.py:126
-msgid ""
-"malformed row. Row must contain site (required), redirect_from (required) "
-"and redirect_to (required)."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/importers.py:150
-msgid "Rule duplicated with <a href=\"{}\" target=\"_blank\">this one</a>"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:27
+#: models.py:7
 msgid "redirect from"
 msgstr "redirezione da"
 
-#: addons-dev/js-redirects/aldryn_redirects/models.py:29
+#: models.py:8
 msgid ""
 "This should be an absolute path, excluding the domain name. Example: '/"
 "events/search/'."
@@ -90,11 +29,11 @@ msgstr ""
 "Deve essere un percorso assoluto, senza nome di dominio. Esempio: '/events/"
 "search/'."
 
-#: addons-dev/js-redirects/aldryn_redirects/models.py:35
+#: models.py:9
 msgid "redirect to"
 msgstr "redirezione verso"
 
-#: addons-dev/js-redirects/aldryn_redirects/models.py:37
+#: models.py:10
 msgid ""
 "This can be either an absolute path (as above) or a full URL starting with "
 "'http://'."
@@ -102,105 +41,10 @@ msgstr ""
 "Può essere un percorso assoluto (come sopra) o una URL completa che inizia "
 "con 'http://'."
 
-#: addons-dev/js-redirects/aldryn_redirects/models.py:44
-msgid "Multilanguage Redirect"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:45
-msgid "Multilanguage Redirects"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:55
-msgid "None"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:62
-#, fuzzy
-#| msgid "redirect from"
-msgid "Redirect from"
-msgstr "redirezione da"
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:66
-msgid ""
-"Redirect origin. Do not provide the domain. Always add a leading slash here."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:69
-#, fuzzy
-#| msgid "redirect to"
-msgid "Redirect to"
-msgstr "redirezione verso"
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:72
-msgid ""
-"Redirect destination. Domain is not required (defaults to inbound route "
-"domain)."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:78
-#, fuzzy
-#| msgid "redirect"
-msgid "Static Redirect"
+#: models.py:13
+msgid "redirect"
 msgstr "redirezione"
 
-#: addons-dev/js-redirects/aldryn_redirects/models.py:79
-#, fuzzy
-#| msgid "redirects"
-msgid "Static Redirects"
+#: models.py:14
+msgid "redirects"
 msgstr "redirezioni"
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:103
-msgid "Key"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/models.py:104
-msgid "Value"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/templates/admin/aldryn_redirects/redirect/change_list.html:12
-#: addons-dev/js-redirects/aldryn_redirects/templates/admin/aldryn_redirects/redirect/import_form.html:26
-#: addons-dev/js-redirects/aldryn_redirects/templates/admin/aldryn_redirects/staticredirect/change_list.html:12
-#: addons-dev/js-redirects/aldryn_redirects/templates/admin/aldryn_redirects/staticredirect/import_form.html:31
-msgid "Import"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/templates/admin/aldryn_redirects/redirect/change_list.html:16
-#: addons-dev/js-redirects/aldryn_redirects/templates/admin/aldryn_redirects/staticredirect/change_list.html:16
-msgid "Export"
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/templates/admin/aldryn_redirects/redirect/import_form.html:6
-#: addons-dev/js-redirects/aldryn_redirects/templates/admin/aldryn_redirects/staticredirect/import_form.html:6
-msgid "Please correct the error below."
-msgid_plural "Please correct the errors below."
-msgstr[0] ""
-msgstr[1] ""
-
-#: addons-dev/js-redirects/aldryn_redirects/validators.py:16
-msgid ""
-"Do not provide the domain. This will be done automatically based on current "
-"site."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/validators.py:19
-msgid "Do not provide the query params. Use \"Query params\" below instead."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/validators.py:22
-msgid "Start this field with a slash."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/validators.py:25
-msgid "Do not append a trailing slash."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/validators.py:28
-#: addons-dev/js-redirects/aldryn_redirects/validators.py:40
-msgid "Invalid URL provided (invalid characters found)."
-msgstr ""
-
-#: addons-dev/js-redirects/aldryn_redirects/validators.py:37
-msgid ""
-"Provide this as either a full url (http://example.com/dest) or a full path (/"
-"dest)."
-msgstr ""

@@ -7,7 +7,6 @@ try:
 except ImportError:
     # Django 2.0
     from django.urls import reverse
-from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _, ugettext
 
 from parler.models import TranslatableModel, TranslatedFields
@@ -18,7 +17,6 @@ from .utils import add_query_params_to_url
 from .validators import validate_inbound_route, validate_outbound_route
 
 
-@python_2_unicode_compatible
 class Redirect(TranslatableModel):
     site = models.ForeignKey(
         Site, related_name='aldryn_redirects_redirect_set',
