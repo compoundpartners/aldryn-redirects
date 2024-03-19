@@ -53,7 +53,7 @@ class RedirectAdmin(AllTranslationsMixin, TranslatableAdmin):
     export_headers = ['Domain', 'Old', 'New', 'Language']
 
     def get_urls(self):
-        from django.conf.urls import url
+        from django.urls import url
 
         def pattern(regex, fn, name):
             args = [regex, self.admin_site.admin_view(fn)]
@@ -148,7 +148,7 @@ class StaticRedirectAdmin(admin.ModelAdmin):
     export_headers = ['domain', 'inbound_route', 'outbound_route']
 
     def get_urls(self):
-        from django.conf.urls import url
+        from django.urls import url
 
         def pattern(regex, fn, name):
             args = [regex, self.admin_site.admin_view(fn)]
