@@ -2,7 +2,7 @@ from collections import defaultdict
 
 from django.contrib.sites.models import Site
 from django.core.exceptions import ValidationError
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from .models import Redirect, StaticRedirect
 from .utils import get_query_params_dict, remove_query_params

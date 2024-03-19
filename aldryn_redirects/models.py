@@ -7,7 +7,7 @@ try:
 except ImportError:
     # Django 2.0
     from django.urls import reverse
-from django.utils.translation import ugettext_lazy as _, ugettext
+from django.utils.translation import gettext_lazy as _, gettext
 
 from parler.models import TranslatableModel, TranslatedFields
 from six.moves.urllib.parse import urlparse, urljoin
@@ -50,7 +50,7 @@ class Redirect(TranslatableModel):
             for t in self.translations.all()
         ])
         if not new_paths:
-            new_paths = ugettext('None')
+            new_paths = gettext('None')
         return "{} ---> {}".format(self.old_path or 'None', new_paths)
 
 

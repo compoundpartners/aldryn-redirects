@@ -12,7 +12,7 @@ except ImportError:
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.utils import timezone
-from django.utils.translation import ugettext_lazy as _, ugettext
+from django.utils.translation import gettext_lazy as _, gettext
 
 from parler.admin import TranslatableAdmin
 
@@ -122,8 +122,8 @@ class RedirectAdmin(AllTranslationsMixin, TranslatableAdmin):
             'root_path': reverse('admin:index'),
             'current_app': self.admin_site.name,
             'app_label': opts.app_label,
-            'title': ugettext('Import redirects'),
-            'original': ugettext('Import redirects'),
+            'title': gettext('Import redirects'),
+            'original': gettext('Import redirects'),
             'errors': form.errors,
         }
         return render(request, 'admin/aldryn_redirects/redirect/import_form.html', context)
@@ -215,8 +215,8 @@ class StaticRedirectAdmin(admin.ModelAdmin):
             'root_path': reverse('admin:index'),
             'current_app': self.admin_site.name,
             'app_label': opts.app_label,
-            'title': ugettext('Import redirects'),
-            'original': ugettext('Import redirects'),
+            'title': gettext('Import redirects'),
+            'original': gettext('Import redirects'),
             'errors': form.errors,
         }
         return render(request, 'admin/aldryn_redirects/staticredirect/import_form.html', context)
